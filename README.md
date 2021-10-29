@@ -3,7 +3,7 @@
 - **Coesão:** Atributos e métodos dentro de uma classe devem estar em harmonia, ou seja, fazem parte de um mesmo contexto.
 - **Encapsulamento:** Proteger a classe de manipulações externas. Vai além de getter e setter, deve expor somente o que for necessário e manipulações devem estar sobre controle da própria classe.
 - **Acoplamento:** Uma classe depende da outra. Acoplamento vai ocorrer, mas o acoplamentos muito fortes devem ser evitados.
-  - Exemplo: Classe A recebe uma lista da classe B e faz um loop nessa lista para calcular o valor. Se a classe B mudar a implementação dessa lista, vai afetar a classe A. O ideal nesse caso era ter um método que retorna o valor calculado.
+  - **Exemplo:** Classe A recebe uma lista da classe B e faz um loop nessa lista para calcular o valor. Se a classe B mudar a implementação dessa lista, vai afetar a classe A. O ideal nesse caso era ter um método que retorna o valor calculado.
 
 # Microsserviços
 
