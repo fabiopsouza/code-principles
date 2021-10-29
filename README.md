@@ -6,6 +6,11 @@
   - Vai além de getter e setter, deve expor somente o que for necessário e manter as manipulações sob controle da própria classe
 - **Acoplamento:** Uma classe depende da outra. Acoplamento vai ocorrer, mas o acoplamentos muito fortes devem ser evitados
   - Exemplo: Classe A recebe uma lista da classe B e faz um loop nessa lista para calcular o valor. Se a classe B mudar a implementação dessa lista, vai afetar a classe A. O ideal nesse caso era ter um método que retorna o valor calculado
+- **Single Responsibility Principle:** Classe deve fazer apenas uma coisa específica
+- **Open / Closed Principle:** 
+- **Liskov Substitution Principle:** 
+- **Interface Segregation Principle:** 
+- **Dependency Inversion Principle:** 
 
 # Microsserviços
 
