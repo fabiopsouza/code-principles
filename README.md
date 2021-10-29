@@ -6,8 +6,11 @@
   - Vai além de getter e setter, deve expor somente o que for necessário e manter as manipulações sob controle da própria classe
 - **Acoplamento:** Uma classe depende da outra. Acoplamento vai ocorrer, mas o acoplamentos muito fortes devem ser evitados
   - Exemplo: Classe A recebe uma lista da classe B e faz um loop nessa lista para calcular o valor. Se a classe B mudar a implementação dessa lista, vai afetar a classe A. O ideal nesse caso era ter um método que retorna o valor calculado
+- **Polimorfismo:** Duas ou mais classes derivadas de uma mesma superclasse podem invocar métodos que têm a mesma assinatura, mas comportamentos distintos
+
 - **Single Responsibility Principle:** Classe deve fazer apenas uma coisa específica
-- **Open / Closed Principle:** 
+- **Open / Closed Principle:** Aberto para extensão, fechado para mudanças. Codificar de modo que facilite polimorfismo, extends, adição de comportamentos sem necessidade de alterar a classe em questão
+  - Exemplo: Uma classe que faz várias validações. Em vez de validar em um método dentro da classe, pode ter cada validação em uma classe específica implementando uma interface e a classe principal recebe uma lista da interface para percorrer e fazer as validações. No caso de uma nova validação, não será necessário alterar a classe principal, basta incluir um novo validador na lista.
 - **Liskov Substitution Principle:** 
 - **Interface Segregation Principle:** 
 - **Dependency Inversion Principle:** 
