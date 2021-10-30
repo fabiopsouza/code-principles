@@ -14,13 +14,14 @@
 # SOLID
 
 - **Single Responsibility Principle:** Classe deve fazer apenas uma coisa específica
-- **Open / Closed Principle:** Aberto para extensão, fechado para mudanças. Codificar de modo que facilite polimorfismo, extends, adição de comportamentos sem necessidade de alterar a classe em questão
+- **Open / Closed Principle:** Aberto para extensão, fechado para mudanças. Codificar de modo que facilite polimorfismo / extends / adição de comportamentos, sem necessidade de alterar a classe em questão
   - Exemplo: Uma classe que faz várias validações. Em vez de validar em um método dentro da classe, pode ter cada validação em uma classe específica implementando uma interface e a classe principal recebe uma lista da interface para percorrer e fazer as validações. No caso de uma nova validação, não será necessário alterar a classe principal, basta incluir um novo validador na lista.
 - **Liskov Substitution Principle:** Usar herança somente quando de fato se trata de uma variação da classe pai
   - Exemplo: Um pato de brinquedo pode parecer, mas NÃO é um pato (animal), portanto, não deve herdar seus comportamentos
   - Recomendação: Substituir herança por composição
-- **Interface Segregation Principle:** 
-- **Dependency Inversion Principle:** 
+- **Interface Segregation Principle:** Uma classe não deve implementar um método que não utilizará
+  - Recomendação: Segregar as lógicas em interfaces mais específicas para que a classe implemente apenas as interfaces realmente necessárias
+- **Dependency Inversion Principle:** Depender de abstrações (interface) que são mais estáveis em vez de implementações
 
 # Microsserviços
 
