@@ -1,4 +1,4 @@
-# SOLID
+# Orientação a Objetos
 
 - **Coesão:** Atributos e métodos dentro de uma classe devem estar em harmonia, ou seja, fazer parte de um mesmo contexto
 - **Encapsulamento:** 
@@ -7,11 +7,18 @@
 - **Acoplamento:** Uma classe depende da outra. Acoplamento vai ocorrer, mas o acoplamentos muito fortes devem ser evitados
   - Exemplo: Classe A recebe uma lista da classe B e faz um loop nessa lista para calcular o valor. Se a classe B mudar a implementação dessa lista, vai afetar a classe A. O ideal nesse caso era ter um método que retorna o valor calculado
 - **Polimorfismo:** Duas ou mais classes derivadas de uma mesma superclasse podem invocar métodos que têm a mesma assinatura, mas comportamentos distintos
+- **Herança:** Equivalente ao "é um". Quando uma classe (filha) é uma variação de outra (pai).
+- Exemplo: Pessoa Física e Pessoa Jurídica extendem de Pessoa
+- **Composição:** Equivalente ao "tem um". Quando uma classe tem outra classe como propriedade.
+
+# SOLID
 
 - **Single Responsibility Principle:** Classe deve fazer apenas uma coisa específica
 - **Open / Closed Principle:** Aberto para extensão, fechado para mudanças. Codificar de modo que facilite polimorfismo, extends, adição de comportamentos sem necessidade de alterar a classe em questão
   - Exemplo: Uma classe que faz várias validações. Em vez de validar em um método dentro da classe, pode ter cada validação em uma classe específica implementando uma interface e a classe principal recebe uma lista da interface para percorrer e fazer as validações. No caso de uma nova validação, não será necessário alterar a classe principal, basta incluir um novo validador na lista.
-- **Liskov Substitution Principle:** 
+- **Liskov Substitution Principle:** Usar herança somente quando de fato se trata de uma variação da classe pai
+  - Exemplo: Um pato de brinquedo pode parecer, mas NÃO é um pato (animal), portanto, não deve herdar seus comportamentos
+  - Recomendação: Substituir herança por composição
 - **Interface Segregation Principle:** 
 - **Dependency Inversion Principle:** 
 
